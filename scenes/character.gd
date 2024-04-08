@@ -1,14 +1,15 @@
 extends CharacterBody2D
 
 
-const SPEED = 500.0
+const  SPEED = 500.0
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 
 
 func _physics_process(delta):
 	# Add the gravity.
-	
+
 
 	# Handle jump.
 	
@@ -19,11 +20,12 @@ func _physics_process(delta):
 	if directionX:
 		velocity.x = directionX * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, 11)
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 	var directionY = Input.get_axis("moveUp","moveDown")
 	if directionY:
 		velocity.y = directionY * SPEED
 	else:
-		velocity.y = move_toward(velocity.y,0,11)
+		velocity.y = move_toward(velocity.y,0,SPEED)
+		
 
 	move_and_slide()
