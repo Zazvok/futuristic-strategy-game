@@ -1,0 +1,29 @@
+extends Camera2D
+
+const speed = 200.0
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+
+func _physics_process(delta):
+	var directionx = Input.get_axis("moveRight","moveLeft")
+	if directionx:
+		pass
+
+
+
+
+
+
+
+
+move_and_slide()
