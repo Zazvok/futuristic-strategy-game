@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx88h4gte3byl"]
+
+[ext_resource type="PackedScene" uid="uid://b0t427rnpsyeg" path="res://scenes/character.tscn" id="1_v0o7p"]
+
+[node name="Zazvoktest" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_v0o7p")]
