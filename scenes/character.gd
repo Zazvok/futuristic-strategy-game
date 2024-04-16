@@ -1,5 +1,7 @@
 extends CharacterBody2D
-
+var skyscraper1 = preload("res://scenes/skyscraper.tscn")
+@onready var character_body_2d = $"."
+@onready var camera_2d = $Camera2D
 
 
 const  SPEED = 500.0
@@ -30,3 +32,9 @@ func _physics_process(delta):
 		
 
 	move_and_slide()
+
+
+func _on_button_pressed():
+	var inst = skyscraper1.instantiate()
+	inst.position = camera_2d.position
+	add_child(inst)
