@@ -2,7 +2,9 @@ extends CharacterBody2D
 var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
 @onready var character_body_2d = $"."
 @onready var camera_2d = $Camera2D
-
+@onready var zazvoktest = $"."
+var control = false
+var inst = skyscraper1.instantiate()
 
 const  SPEED = 500.0
 
@@ -35,10 +37,5 @@ func _physics_process(delta):
 
 
 func _on_button_pressed():
-	spawn()
-	
-	
-func spawn():
-	var inst = skyscraper1.instantiate()
-	inst.position = camera_2d.position
-	add_child(inst)
+	inst.position = Vector2(0,0)
+	zazvoktest.add_child(inst)

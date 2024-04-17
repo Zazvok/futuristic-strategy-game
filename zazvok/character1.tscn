@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://d3i2p4t4aafu2"]
 
-[ext_resource type="Script" path="res://scenes/character.gd" id="1_cqigc"]
+[ext_resource type="Script" path="res://zazvok/character1.gd" id="1_30qlp"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_cqigc")
+script = ExtResource("1_30qlp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

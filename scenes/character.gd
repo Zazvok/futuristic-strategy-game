@@ -38,3 +38,7 @@ func _on_button_pressed():
 	var inst = skyscraper1.instantiate()
 	inst.position = camera_2d.position
 	add_child(inst)
+
+
+func _on_zazvoktest_child_entered_tree(node):
+	pass # Replace with function body.
