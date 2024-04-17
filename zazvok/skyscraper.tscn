@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://l0v3anyoi8ci"]
 
-[ext_resource type="Texture2D" uid="uid://cba3mncax77vf" path="res://icon.svg" id="1_am705"]
+[ext_resource type="Texture2D" uid="uid://cba3mncax77vf" path="res://icon.svg" id="1_4at3l"]
 
 [node name="Skyscraper" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_am705")
+texture = ExtResource("1_4at3l")

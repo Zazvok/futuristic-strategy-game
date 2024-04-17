@@ -35,6 +35,10 @@ func _physics_process(delta):
 
 
 func _on_button_pressed():
+	spawn()
+	
+	
+func spawn():
 	var inst = skyscraper1.instantiate()
 	inst.position = camera_2d.position
 	add_child(inst)
