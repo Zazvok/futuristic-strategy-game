@@ -156,7 +156,6 @@ sources/0 = SubResource("TileSetAtlasSource_jups0")
 [node name="Zazvoktest" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_51t18")]
-position = Vector2(23, -25)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_pavk1")

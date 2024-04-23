@@ -5,16 +5,11 @@ var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
 @onready var zazvoktest = $"."
 var control = false
 var inst = skyscraper1.instantiate()
-
 const  SPEED = 500.0
-
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-
+var count = 0
 
 func _physics_process(delta):
 	# Add the gravity.
-
 
 	# Handle jump.
 	
@@ -39,3 +34,6 @@ func _physics_process(delta):
 func _on_button_pressed():
 	inst.position = Vector2(0,0)
 	zazvoktest.add_child(inst)
+	count += 1
+	print(count)
+	GlobalVar.move = true
