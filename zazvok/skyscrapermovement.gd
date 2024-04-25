@@ -1,15 +1,15 @@
 extends CharacterBody2D
-const SPEED = 300.0
+var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
+var inst = skyscraper1.instantiate()
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-
-
-
-func _physics_process(delta):
-	var mousepos = get_viewport().get_mouse_position()
+func _process(delta):
 	if GlobalVar.move == true:
+<<<<<<< Updated upstream
 		print(mousepos)
 		position = mousepos
 		#velocity.x = move_toward(mousepos.x,0,SPEED)
 		#velocity.y = move_toward(mousepos.y,0,SPEED)
 	move_and_slide()
+=======
+		pass
+>>>>>>> Stashed changes
