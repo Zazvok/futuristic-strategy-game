@@ -8,6 +8,7 @@ var inst = skyscraper1.instantiate()
 const  SPEED = 500.0
 var count = 0
 
+
 func _physics_process(delta):
 	# Add the gravity.
 
@@ -29,12 +30,5 @@ func _physics_process(delta):
 		
 
 	move_and_slide()
+	
 
-
-func _on_button_pressed():
-	var mosuepos = get_viewport().get_mouse_position()
-	inst.position = Vector2(mosuepos)
-	zazvoktest.add_child(inst)
-	count += 1
-	print(count)
-	GlobalVar.move = true
