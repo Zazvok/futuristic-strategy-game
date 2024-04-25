@@ -1,5 +1,5 @@
 extends Button
-var skyscraper1 = preload("res://scenes/skyscraper.tscn")
+var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

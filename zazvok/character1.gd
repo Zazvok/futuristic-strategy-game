@@ -32,7 +32,8 @@ func _physics_process(delta):
 
 
 func _on_button_pressed():
-	inst.position = Vector2(0,0)
+	var mosuepos = get_viewport().get_mouse_position()
+	inst.position = Vector2(mosuepos)
 	zazvoktest.add_child(inst)
 	count += 1
 	print(count)
