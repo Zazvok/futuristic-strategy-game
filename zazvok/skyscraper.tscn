@@ -1,14 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://l0v3anyoi8ci"]
 
-[ext_resource type="Texture2D" uid="uid://cba3mncax77vf" path="res://icon.svg" id="1_4at3l"]
+[ext_resource type="Texture2D" uid="uid://c56bnh0bvydfk" path="res://pixil-frame-0.png" id="1_m6ggx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oiwmn"]
 size = Vector2(127, 127)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="skysrpaer" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_4at3l")
+position = Vector2(-1.90735e-06, -1.90735e-06)
+scale = Vector2(4.375, 4.1875)
+texture = ExtResource("1_m6ggx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

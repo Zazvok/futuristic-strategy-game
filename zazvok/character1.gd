@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-@onready var character_body_2d = $"."
-@onready var camera_2d = $Camera2D
 @onready var zazvoktest = $"."
+var buildingplacer = preload("res://zazvok/buildingplacer.tscn")
 var control = false
+
 
 const  SPEED = 500.0
 var count = 0
@@ -32,12 +32,12 @@ func _physics_process(delta):
 
 
 func _on_button_pressed():
-<<<<<<< Updated upstream
-	var mosuepos = get_viewport().get_mouse_position()
-	inst.position = Vector2(mosuepos)
-	zazvoktest.add_child(inst)
-	count += 1
-	print(count)
-=======
->>>>>>> Stashed changes
-	GlobalVar.move = true
+	if GlobalVar.move == false:
+		var inst = buildingplacer.instantiate()
+		var mosuepos = get_viewport().get_mouse_position()
+		print(mosuepos)
+		inst.position = Vector2(mosuepos)
+		zazvoktest.add_child(inst)
+		count += 1
+		print(count)
+		GlobalVar.move = true
