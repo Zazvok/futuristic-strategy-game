@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bx88h4gte3byl"]
+[gd_scene load_steps=6 format=3 uid="uid://bx88h4gte3byl"]
 
+[ext_resource type="Script" path="res://zazvok/zazvoktest.gd" id="1_8aycl"]
 [ext_resource type="PackedScene" uid="uid://d3i2p4t4aafu2" path="res://zazvok/character1.tscn" id="1_51t18"]
 [ext_resource type="Texture2D" uid="uid://d4i2d52mu35dn" path="res://terrain-tilemap.png" id="2_p5liw"]
 
@@ -154,6 +155,7 @@ texture = ExtResource("2_p5liw")
 sources/0 = SubResource("TileSetAtlasSource_jups0")
 
 [node name="Zazvoktest" type="Node2D"]
+script = ExtResource("1_8aycl")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_51t18")]
 

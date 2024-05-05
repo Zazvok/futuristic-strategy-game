@@ -32,12 +32,4 @@ func _physics_process(delta):
 
 
 func _on_button_pressed():
-	if GlobalVar.move == false:
-		var inst = buildingplacer.instantiate()
-		var mosuepos = get_viewport().get_mouse_position()
-		print(mosuepos)
-		inst.position = Vector2(mosuepos)
-		zazvoktest.add_child(inst)
-		count += 1
-		print(count)
-		GlobalVar.move = true
+	GlobalVar.move = true
