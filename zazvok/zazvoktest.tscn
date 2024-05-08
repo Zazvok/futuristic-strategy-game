@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bx88h4gte3byl"]
+[gd_scene load_steps=7 format=3 uid="uid://bx88h4gte3byl"]
 
 [ext_resource type="Script" path="res://zazvok/zazvoktest.gd" id="1_8aycl"]
 [ext_resource type="PackedScene" uid="uid://d3i2p4t4aafu2" path="res://zazvok/character1.tscn" id="1_51t18"]
 [ext_resource type="Texture2D" uid="uid://d4i2d52mu35dn" path="res://terrain-tilemap.png" id="2_p5liw"]
+[ext_resource type="Script" path="res://zazvok/gridplacement.gd" id="4_veqm5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jups0"]
 texture = ExtResource("2_p5liw")
@@ -163,3 +164,4 @@ script = ExtResource("1_8aycl")
 tile_set = SubResource("TileSet_pavk1")
 format = 2
 layer_0/tile_data = PackedInt32Array(196604, 458752, 0, 196605, 458752, 0, 196606, 458752, 0, 196607, 458752, 0, 131072, 458752, 0, 131073, 458752, 0, 131074, 458752, 0, 131075, 458752, 0, 131076, 458752, 0, 131077, 458752, 0, 196603, 458752, 0, 196602, 458752, 0)
+script = ExtResource("4_veqm5")
