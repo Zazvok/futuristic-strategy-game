@@ -9,4 +9,3 @@ func _process(delta):
 		GlobalVar.move = false
 		asd += 1
 		print(asd)
-   
