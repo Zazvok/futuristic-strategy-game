@@ -480,3 +480,5 @@ layer_0/tile_data = PackedInt32Array(1441845, 458752, 0, 1507380, 458752, 0, 157
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_04dyw")]
 position = Vector2(575, 324)
+
+[node name="CharacterBody2D_Simon" type="CharacterBody2D" parent="."]
