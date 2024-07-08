@@ -20,7 +20,7 @@ func _process(delta):
 	if dic.has(str(tile)):
 		set_cell(3, tile, 0,Vector2i(0,0),0)
 		print(dic[str(tile)])
-		if Input.is_key_pressed(KEY_P):
+		if Input.is_key_pressed(KEY_P):	
 			set_cell(1,tile,1,Vector2i(0,0),0)
 			set_cell(2,Vector2(tile[0],tile[1]-1),1,Vector2i(0,0),0)
 		if Input.is_key_pressed(KEY_O):

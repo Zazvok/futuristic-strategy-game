@@ -31,5 +31,3 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_button_pressed():
-	GlobalVar.move = true
