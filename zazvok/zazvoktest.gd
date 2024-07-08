@@ -8,4 +8,4 @@ func _process(delta):
 		add_child(inst)
 		GlobalVar.move = false
 		asd += 1
-		print(asd)
+		print(asd) 
