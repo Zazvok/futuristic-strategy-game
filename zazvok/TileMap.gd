@@ -1,6 +1,6 @@
 extends TileMap
 
-
+var ran = 0
 var gridsize = 4
 var dic = {}
 
@@ -11,6 +11,7 @@ func _ready():
 				
 			}
 			set_cell(0, Vector2(x,y), 3, Vector2(0,0),0)
+			set_cell(1, Vector2(x,y),2,Vector2(0,0),0)
 	print(dic)
 func _process(delta):
 	var tile = local_to_map(get_global_mouse_position())

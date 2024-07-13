@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bx88h4gte3byl"]
+[gd_scene load_steps=13 format=3 uid="uid://bx88h4gte3byl"]
 
 [ext_resource type="Script" path="res://zazvok/zazvoktest.gd" id="1_8aycl"]
 [ext_resource type="PackedScene" uid="uid://d3i2p4t4aafu2" path="res://zazvok/character1.tscn" id="1_51t18"]
 [ext_resource type="Texture2D" uid="uid://dokrobdwyhrth" path="res://pixil-frame-0 (1).png" id="3_21qjh"]
 [ext_resource type="Texture2D" uid="uid://b54ya8khwuk04" path="res://pixil-frame-0 (3).png" id="3_xsplg"]
 [ext_resource type="Texture2D" uid="uid://c56bnh0bvydfk" path="res://pixil-frame-0.png" id="4_dsvgs"]
+[ext_resource type="Texture2D" uid="uid://c7ma513275spk" path="res://pixil-frame-0 (4).png" id="5_lha2p"]
 [ext_resource type="Script" path="res://zazvok/TileMap.gd" id="5_q78jd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dt11r"]
@@ -15,6 +16,10 @@ texture = ExtResource("3_xsplg")
 texture = ExtResource("4_dsvgs")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_og42f"]
+texture = ExtResource("5_lha2p")
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pogik"]
 texture = ExtResource("3_21qjh")
 0:0/0 = 0
@@ -23,6 +28,7 @@ texture = ExtResource("3_21qjh")
 sources/3 = SubResource("TileSetAtlasSource_pogik")
 sources/0 = SubResource("TileSetAtlasSource_dt11r")
 sources/1 = SubResource("TileSetAtlasSource_cgph1")
+sources/2 = SubResource("TileSetAtlasSource_og42f")
 
 [node name="Zazvoktest" type="Node2D"]
 script = ExtResource("1_8aycl")
