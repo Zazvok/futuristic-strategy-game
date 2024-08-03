@@ -31,8 +31,8 @@ func _process(delta):
 			if get_cell_source_id(1,tile) == 2:
 				print("nope")
 				return
-			set_cell(1,tile,1,Vector2i(0,0),0)
-			set_cell(2,Vector2(tile[0],tile[1]-1),1,Vector2i(0,0),0)
+			set_cell(1,tile,5,Vector2i(0,0),0)
+			set_cell(2,Vector2(tile[0],tile[1]-1),6,Vector2i(0,0),0)
 		if Input.is_key_pressed(KEY_O):
 			erase_cell(1,tile)
 			erase_cell(2,Vector2(tile[0],tile[1]-1))
