@@ -1,10 +1,13 @@
 extends TileMap
 
 var ran = RandomNumberGenerator.new()
-var gridsize = 16
+var gridsize = 32
 var dic = {}
 var dicfa = {}
+var treecount = 0
 
+
+#world generation
 func _ready():
 	for x in gridsize:
 		for y in gridsize:
@@ -12,13 +15,24 @@ func _ready():
 				"Type": "Grnd"
 			}
 			set_cell(0, Vector2(x,y), 3, Vector2(0,0),0)
-			var skibidi = ran.randf_range(0,2)
-			if skibidi > 1.5:
-				dicfa[str(Vector2(x,y))] = {
-					"type": "fa"
-				}
+			var treespawn = ran.randf_range(0,5)
+			if treespawn > 4.99:
+				#dicfa[str(Vector2(x,y))] = {
+				#	"type": "fa"
+				#}
 				set_cell(1,Vector2(x,y),2,Vector2(0,0),0)
-	print(dic)
+				for xx in gridsize:
+					for yy in gridsize:
+						var sor = get_surrounding_cells(Vector2(xx,yy))
+						for i in range(0,4):
+							if get_cell_source_id(1,Vector2(sor[i])) == 2:
+								print("fa")
+								if treespawn > 4.973:
+									set_cell(1,Vector2(xx,yy),2,Vector2(0,0),0)
+									treecount += 1
+									
+									
+	#print(dic)
 func _process(delta):
 	var tile = local_to_map(get_global_mouse_position())
 	for x in gridsize:
