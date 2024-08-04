@@ -1,13 +1,13 @@
 extends CharacterBody2D
-var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
-@onready var character_body_2d = $"."
-@onready var camera_2d = $Camera2D
+
 @onready var zazvoktest = $"."
+var buildingplacer = preload("res://zazvok/buildingplacer.tscn")
 var control = false
-var inst = skyscraper1.instantiate()
+@onready var camera_2d = $Camera2D
+
+
 const  SPEED = 500.0
 var count = 0
-
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -30,5 +30,5 @@ func _physics_process(delta):
 		
 
 	move_and_slide()
-	
+
 
