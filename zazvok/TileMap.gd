@@ -27,7 +27,7 @@ func _ready():
 						for i in range(0,4):
 							if get_cell_source_id(1,Vector2(sor[i])) == 2:
 								print("fa")
-								if treespawn > 4.973:
+								if treespawn > 4.995:
 									set_cell(1,Vector2(xx,yy),2,Vector2(0,0),0)
 									treecount += 1
 									
