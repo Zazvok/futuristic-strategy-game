@@ -7,8 +7,8 @@ extends Camera2D
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_key_pressed(KEY_UP):
-		zoom.x += 0.1
-		zoom.y += 0.1
+		zoom.x += 0.05
+		zoom.y += 0.05
 	elif Input.is_key_pressed(KEY_DOWN):
-		zoom.x -= 0.1
-		zoom.y -= 0.1
+		zoom.x -= 0.05
+		zoom.y -= 0.05

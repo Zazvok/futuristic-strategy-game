@@ -23,13 +23,17 @@ func _ready():
 				set_cell(1,Vector2(x,y),2,Vector2(0,0),0)
 				for xx in gridsize:
 					for yy in gridsize:
-						var sor = get_surrounding_cells(Vector2(xx,yy))
-						for i in range(0,4):
-							if get_cell_source_id(1,Vector2(sor[i])) == 2:
-								print("fa")
-								if treespawn > 4.995:
-									set_cell(1,Vector2(xx,yy),2,Vector2(0,0),0)
-									treecount += 1
+						if get_cell_source_id(1,Vector2(xx,yy)) == 2:
+							var treespawn2 = ran.randf_range(0,4)
+							if treespawn2 <= 3:
+								print("szia bobo remelem szep napod van")
+						#var sor = get_surrounding_cells(Vector2(xx,yy))
+						#for i in range(0,4):
+							#if get_cell_source_id(1,Vector2(sor[i])) == 2:
+								#print("fa")
+								#if treespawn > 4.995:
+									#set_cell(1,Vector2(xx,yy),2,Vector2(0,0),0)
+									#treecount += 1
 									
 									
 	#print(dic)
