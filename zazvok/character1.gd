@@ -1,9 +1,6 @@
 extends CharacterBody2D
 
-@onready var zazvoktest = $"."
-var buildingplacer = preload("res://zazvok/buildingplacer.tscn")
-var control = false
-@onready var camera_2d = $Camera2D
+
 
 
 const  SPEED = 500.0
