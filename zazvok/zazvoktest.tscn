@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bx88h4gte3byl"]
+[gd_scene load_steps=21 format=3 uid="uid://bx88h4gte3byl"]
 
 [ext_resource type="Script" path="res://zazvok/zazvoktest.gd" id="1_8aycl"]
 [ext_resource type="PackedScene" uid="uid://d3i2p4t4aafu2" path="res://zazvok/character1.tscn" id="1_51t18"]
@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://c56bnh0bvydfk" path="res://pixil-frame-0.png" id="4_dsvgs"]
 [ext_resource type="Texture2D" uid="uid://c7ma513275spk" path="res://pixil-frame-0 (4).png" id="5_lha2p"]
 [ext_resource type="Script" path="res://zazvok/TileMap.gd" id="5_q78jd"]
+[ext_resource type="Texture2D" uid="uid://d0pjlkmg3sv55" path="res://pixil-frame-0 (6).png" id="7_6x1w2"]
 [ext_resource type="Texture2D" uid="uid://bn1jyp1qd6jay" path="res://pixil-frame-0 (5).png" id="7_yxle4"]
 [ext_resource type="Texture2D" uid="uid://ckcs30ecrtpj0" path="res://pixil-frame-0 (8).png" id="8_vkepb"]
+[ext_resource type="Texture2D" uid="uid://oicrqiwgpdwh" path="res://pixil-frame-0 (2) (2).png" id="10_0r5v8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dt11r"]
 texture = ExtResource("3_xsplg")
@@ -26,12 +28,20 @@ texture = ExtResource("5_lha2p")
 texture = ExtResource("3_21qjh")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rjsbi"]
+texture = ExtResource("7_6x1w2")
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5brd4"]
 texture = ExtResource("7_yxle4")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3gi8"]
 texture = ExtResource("8_vkepb")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_swk5u"]
+texture = ExtResource("10_0r5v8")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_xlb0p"]
@@ -41,6 +51,8 @@ sources/1 = SubResource("TileSetAtlasSource_cgph1")
 sources/2 = SubResource("TileSetAtlasSource_og42f")
 sources/5 = SubResource("TileSetAtlasSource_5brd4")
 sources/6 = SubResource("TileSetAtlasSource_l3gi8")
+sources/4 = SubResource("TileSetAtlasSource_rjsbi")
+sources/7 = SubResource("TileSetAtlasSource_swk5u")
 
 [node name="Zazvoktest" type="Node2D"]
 script = ExtResource("1_8aycl")

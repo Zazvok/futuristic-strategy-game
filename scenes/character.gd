@@ -1,5 +1,4 @@
 extends CharacterBody2D
-var skyscraper1 = preload("res://zazvok/skyscraper.tscn")
 @onready var character_body_2d = $"."
 @onready var camera_2d = $Camera2D
 
@@ -34,11 +33,3 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_button_pressed():
-	var inst = skyscraper1.instantiate()
-	inst.position = camera_2d.position
-	add_child(inst)
-
-
-func _on_zazvoktest_child_entered_tree(node):
-	pass # Replace with function body.
