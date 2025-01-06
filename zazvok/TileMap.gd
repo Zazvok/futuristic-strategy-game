@@ -17,6 +17,7 @@ func _ready():
 			set_cell(0, Vector2(x,y), 7, Vector2(0,0),0)
 	erdo()
 	alt()
+	print(mountainlist)
 		
 	print(dic)
 
@@ -27,7 +28,6 @@ func _process(delta):
 			erase_cell(3, Vector2(x,y))
 	if dic.has(str(tile)):
 		set_cell(3, tile, 0,Vector2i(0,0),0)
-		print(dic[str(tile)])
 		if Input.is_key_pressed(KEY_P):
 			if get_cell_source_id(1,tile) == 2:
 				print("nope")
@@ -37,6 +37,8 @@ func _process(delta):
 		if Input.is_key_pressed(KEY_O):
 			erase_cell(1,tile)
 			erase_cell(2,Vector2(tile[0],tile[1]-1))
+		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+			print(dic[str(tile)])
 	if Input.is_key_pressed(KEY_R):
 		for x in 55:
 			for y in 55:
@@ -84,8 +86,8 @@ func alt():
 		for y in gridsize:
 			mountainlist.insert(0,get_surrounding_cells(Vector2(x,y)))
 			
-	for k in len(mountainlist):
-		set_cell(0,Vector2(mountainlist[k]),3,Vector2(0,0),0)
+	#for k in len(mountainlist):
+		#set_cell(0,Vector2(mountainlist[k]),3,Vector2(0,0),0)
 	
 	
 	
