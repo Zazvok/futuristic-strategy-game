@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bx88h4gte3byl"]
+[gd_scene load_steps=22 format=3 uid="uid://bx88h4gte3byl"]
 
 [ext_resource type="Script" path="res://zazvok/zazvoktest.gd" id="1_8aycl"]
 [ext_resource type="PackedScene" uid="uid://d3i2p4t4aafu2" path="res://zazvok/character1.tscn" id="1_51t18"]
@@ -54,6 +54,9 @@ sources/6 = SubResource("TileSetAtlasSource_l3gi8")
 sources/4 = SubResource("TileSetAtlasSource_rjsbi")
 sources/7 = SubResource("TileSetAtlasSource_swk5u")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ppmg"]
+radius = 177.071
+
 [node name="Zazvoktest" type="Node2D"]
 script = ExtResource("1_8aycl")
 
@@ -71,3 +74,6 @@ layer_2/tile_data = PackedInt32Array()
 layer_3/name = "hud"
 layer_3/tile_data = PackedInt32Array()
 script = ExtResource("5_q78jd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap"]
+shape = SubResource("CircleShape2D_3ppmg")
