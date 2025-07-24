@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 GlobalVar="*res://zazvok/globalVar.gd"
 Character1="*res://zazvok/character1.gd"
-Skyscrapermovement="*res://zazvok/skyscrapermovement.gd"
+Zazvoktest="*res://zazvok/zazvoktest.gd"
 
 [input]
 
