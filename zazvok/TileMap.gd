@@ -6,7 +6,9 @@ var fasokasag = 0
 var x = 0
 var falist = []
 var gridsize = 50
+
 func _ready():
+	
 	spawn()
 	
 	
@@ -29,7 +31,8 @@ func _ready():
 
 
 func spawn():
-	set_cell(1,Vector2(25,25),2,Vector2(0,0),0)
+	var mousepos1 = map_to_local(Zazvoktest.mousepos)
+	set_cell(1,mousepos1,2,Vector2(0,0),0)
 
 	for k in 30:
 		for xx in gridsize:
@@ -59,7 +62,7 @@ func spawn():
 	
 func _process(delta):
 	var tile = local_to_map(get_global_mouse_position())
-	Zazvoktest.mousepos = local_to_map(Vector2(0,0))
+	
 	print(Zazvoktest.mousepos)
 	for x in range(-1,51):
 		for y in range(-1,51):

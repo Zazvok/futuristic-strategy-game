@@ -1,0 +1,67 @@
+[gd_scene load_steps=19 format=3 uid="uid://ct0cle18gftj1"]
+
+[ext_resource type="Texture2D" uid="uid://b54ya8khwuk04" path="res://pixil-frame-0 (3).png" id="1_67pnh"]
+[ext_resource type="Texture2D" uid="uid://c56bnh0bvydfk" path="res://pixil-frame-0.png" id="2_su1yd"]
+[ext_resource type="Texture2D" uid="uid://c7ma513275spk" path="res://pixil-frame-0 (4).png" id="3_b0dx0"]
+[ext_resource type="Texture2D" uid="uid://dokrobdwyhrth" path="res://pixil-frame-0 (1).png" id="4_5b1we"]
+[ext_resource type="Texture2D" uid="uid://d0pjlkmg3sv55" path="res://pixil-frame-0 (6).png" id="5_3brs5"]
+[ext_resource type="Texture2D" uid="uid://bn1jyp1qd6jay" path="res://pixil-frame-0 (5).png" id="6_667kr"]
+[ext_resource type="Texture2D" uid="uid://ckcs30ecrtpj0" path="res://pixil-frame-0 (8).png" id="7_2vc5w"]
+[ext_resource type="Texture2D" uid="uid://oicrqiwgpdwh" path="res://pixil-frame-0 (2) (2).png" id="8_sl6eu"]
+[ext_resource type="Script" path="res://zazvok/TileMap.gd" id="9_80c3f"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dt11r"]
+texture = ExtResource("1_67pnh")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgph1"]
+texture = ExtResource("2_su1yd")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_og42f"]
+texture = ExtResource("3_b0dx0")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pogik"]
+texture = ExtResource("4_5b1we")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rjsbi"]
+texture = ExtResource("5_3brs5")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5brd4"]
+texture = ExtResource("6_667kr")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3gi8"]
+texture = ExtResource("7_2vc5w")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_swk5u"]
+texture = ExtResource("8_sl6eu")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xlb0p"]
+sources/3 = SubResource("TileSetAtlasSource_pogik")
+sources/0 = SubResource("TileSetAtlasSource_dt11r")
+sources/1 = SubResource("TileSetAtlasSource_cgph1")
+sources/2 = SubResource("TileSetAtlasSource_og42f")
+sources/5 = SubResource("TileSetAtlasSource_5brd4")
+sources/6 = SubResource("TileSetAtlasSource_l3gi8")
+sources/4 = SubResource("TileSetAtlasSource_rjsbi")
+sources/7 = SubResource("TileSetAtlasSource_swk5u")
+
+[node name="TileMap" type="TileMap"]
+texture_filter = 1
+tile_set = SubResource("TileSet_xlb0p")
+collision_animatable = true
+format = 2
+layer_0/name = "grnd"
+layer_1/name = "buildings"
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "2nd"
+layer_2/tile_data = PackedInt32Array()
+layer_3/name = "hud"
+layer_3/tile_data = PackedInt32Array()
+script = ExtResource("9_80c3f")
